@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script>
+        function goForward() {
+            if (history.length > 1) {
+                // window.history.forward();
+                window.history.go(1);  
+            } else {
+                alert("访问历史中只有一张页面");
+            }
+        }
+        function goBack() {
+            // window.history.back();
+            window.history.go(-1);       
+        }
+    </script>
+</head>
+
+<body>
+    这是第1个html页面 <a href="2.html">2</a><a href="3.html">3</a><br /><br />
+    <button onclick="goForward()">跳到下一个页面</button>
+    <button onclick="goBack()">跳到上一个页面</button>
+</body>
+
+</html>
